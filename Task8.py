@@ -5,3 +5,14 @@
 
 # 3 2 4 -> yes
 # 3 2 1 -> no
+
+print ('введите размер n: ')
+n = int(input())
+print ('введите размер m: ')
+m = int(input())
+print ('введите сколько долек отломить k: ')
+k = int(input())
+if n * m >= k and (k % n == 0 or k % m == 0):
+ print ("YES")
+else:
+ print ("NO")
