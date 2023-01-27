@@ -6,11 +6,11 @@
 # 3 2 4 -> yes
 # 3 2 1 -> no
 
-print ('введите размер n: ')
+print ('Введите размер n: ')
 n = int(input())
-print ('введите размер m: ')
+print ('Введите размер m: ')
 m = int(input())
-print ('введите сколько долек отломить k: ')
+print ('Введите сколько долек отломить k: ')
 k = int(input())
 if n * m >= k and (k % n == 0 or k % m == 0):
  print ("YES")
