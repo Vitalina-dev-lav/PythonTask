@@ -11,3 +11,14 @@
 # число – это масса соответствующего арбуза
 # Input: 5 -> 5 1 6 5 9
 # Output: 1 9
+
+N = int(input("Введите количество арбузов: "))
+maxi = 0
+mini = 100
+for i in range(N):
+    m = int(input("Введите вес арбуза: "))
+    if m > maxi:
+        maxi = m
+    if m<mini:
+        mini = m
+print(f"Минимальный вес {mini}, максимальный вес {maxi}")
