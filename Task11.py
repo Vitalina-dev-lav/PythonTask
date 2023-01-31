@@ -5,3 +5,35 @@
 # является числом Фибоначчи, выведите число -1.
 # Input: 5
 # Output: 6 
+
+A = int(input('Введите число больше 1: '))
+f1 = 0
+f2 = 1
+i = 2
+while f2 < A:
+    temp = f2
+    f2 = f2 + f1
+    f1 = temp
+    i+=1
+if A == f1 or A == f2:
+    print ('Число А является числом Фибоначчи №', i)
+else:
+    print ('Число А не является числом Фибоначчи')
+
+
+#     a = int(input("Enter a: "))
+# b = 0
+# c = 0
+# d = 1
+# i = 2
+# while b < a:
+#     b = c + d
+#     c = d
+#     d = b
+#     i += 1
+#     if b > a:
+#         i = 0
+# if i == 0:
+#     print(-1)
+# else:
+#     print(i)
