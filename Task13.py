@@ -16,3 +16,16 @@
 # диапазоне от –50 до 50
 # Input: 6 -> -20 30 -40 50 10 -10
 # Output: 2
+
+N = int(input("Введите количество дней: "))
+count = 0
+maxi = 0
+for i in range(N):
+    x = int(input("Введите темепературу: "))
+    if x > 0:
+        count += 1
+    else:
+        if maxi < count:
+            maxi = count
+        count = 0
+print(maxi)
