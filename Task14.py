@@ -4,7 +4,7 @@
 # 10 -> 1 2 4 8
 
 n=int(input('Введите число N: '))
-p=1
-while p<=n:
-    print(p,end=' ')
-    p=p*2
+p=0
+while (2**p<=n):
+    print(f'{2**p} ')
+    p+=1
