@@ -8,3 +8,14 @@
 # 1 2 3 4 5
 # 6
 # -> 5
+
+input('Введите количество элементов:')
+num = list(map(int, (input("Введите массив через пробел:").split())))
+x = int(input("Заданное число:"))
+
+res = num[0]
+for i in num:
+    if abs(i  -x) < abs  (res-x):
+        res = i
+
+print(res)
